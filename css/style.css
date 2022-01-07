@@ -1,0 +1,56 @@
+.location {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.icon {
+    display: inline;
+}
+
+.temperature-container {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.temperature {
+    font-size: 20px;
+}
+
+.temperature::before {
+    content: "Temperature: ";
+}
+
+.imperial::after {
+    content: '℉';
+}
+
+.metric::after {
+    content: '℃';
+}
+
+.feels_like {
+    font-size: 16px;
+    display: inline;
+    opacity: .8;
+}
+
+.feels_like::before {
+    content: 'Feels like: ';
+}
+
+.low::before {
+    content: 'Estimated Low: ';
+}
+
+.high::before {
+    content: 'Estimated High: ';
+}
+
+button {
+    margin-top: 8px;
+}
